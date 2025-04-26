@@ -1,6 +1,3 @@
-from Backend.flask_app import app
+from Backend.flask_app import app as flask_app
 
-
-if __name__ == "__main__":
-        app.run(debug=True)
-
+handler = flask_app

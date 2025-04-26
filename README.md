@@ -53,7 +53,7 @@ CREDIT_CARD_SCRAPER/
 - Copy the key and add it to your `.env` file in the root directory:
   
 ```env
-GOOGLE_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
 ```
 
 ---
