@@ -172,5 +172,7 @@ The web app provides an interactive interface to control and monitor the scrapin
 ```
 ### 🎬 Demo
 
+https://github.com/user-attachments/assets/b6213305-7660-4a23-bb6c-5fdaf22eb2cd
+
 ---
 
