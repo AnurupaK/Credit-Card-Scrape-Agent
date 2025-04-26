@@ -1,0 +1,193 @@
+/* Reset default margins and set global font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Main page container setup with padding and centered flex layout */
+.container {
+   width: 100vw;
+   height: 100vh;
+   padding: 21px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Top section for heading or inputs */
+.upper-container {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(5, 5, 55);
+    border-radius: 11px;
+}
+
+/* Area showing fetching status (animated text while loading) */
+#waiting-area {
+    min-width: 21%;
+    height: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2.3rem;
+    background-color: wheat;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Input field for entering the base URL */
+#url-box {
+    width: 60%;
+    height: 50%;
+    padding: 13px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+/* Bottom section where card results and controls are shown */
+.lower-container {
+    width: 90%;
+    height: 80%;
+    padding: 11px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side where all card info gets displayed */
+.left-container {
+    border: 1px solid black;
+    width: 63%;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 21px;
+    box-sizing: border-box;
+}
+
+/* Each URL box container */
+.url-catch {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid black;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Wrapper for card data per card */
+.card-data {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 21px;
+}
+
+/* Card title styling (centered and emphasized) */
+.card-title {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transform: translateY(-43px);
+    text-decoration: underline;
+}
+
+/* Optional right section for controls/buttons */
+.right-container {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(230, 224, 224);
+}
+
+/* Key labels inside cards (like field names) */
+.main-key {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: green;
+}
+
+/* Regular values next to main keys */
+.value {
+    font-size: 16px;
+    padding-left: 20px;
+    color: #333;
+}
+
+/* Container for nested content (arrays or sub-objects) */
+.nested-section {
+    margin-left: 20px;
+}
+
+/* Override main-key color inside nested sections to red */
+.nested-section .main-key {
+    color: red; /* Used in reward sections */
+}
+
+/* List items inside nested content */
+.nested-section p {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Add margin below each section for spacing */
+.space {
+    margin-bottom: 10px;
+}
+
+/* Button base styling on the right */
+.small-buttons {
+    width: 35%;
+    height: 15%;
+    border-radius: 13px;
+    font-size: 1.3rem;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+/* Base button look + animation on hover */
+.small-buttons-main {
+    transition: transform 0.2s ease-in-out;
+    background-color: pink;
+}
+
+/* Hover state: scale and invert colors */
+.small-buttons-main:hover {
+    transform: scale(1.09);
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+/* Emphasize reward section values */
+.reward-structure {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Add spacing between inner divs in nested areas */
+.nested-section > div {
+    margin-bottom: 15px;
+}

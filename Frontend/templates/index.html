@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <title>Credit Card Scraper</title>
+</head>
+<body>
+    <!-- Main wrapper -->
+    <div class="container">
+        
+        <!-- Top section: URL input + status -->
+        <div class="upper-container">
+            <div id="waiting-area">Hello!</div>
+            <input type="text" id="url-box" placeholder="Enter the URL of the website">
+        </div>
+
+        <!-- Bottom section: data display + controls -->
+        <div class="lower-container">
+            <div class="left-container"></div>
+
+            <div class="right-container">
+                <input class="small-buttons" id="batch" type="text" placeholder="Batch Size">
+                <button class="small-buttons small-buttons-main" id="next">Next Batch</button>
+                <button class="small-buttons small-buttons-main" id="csv">Download CSV</button>
+                <button class="small-buttons small-buttons-main" id="start">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
