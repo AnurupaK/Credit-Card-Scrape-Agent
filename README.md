@@ -9,7 +9,7 @@ This project is a smart and scalable **credit card scraping tool** that uses **S
 ```
 CREDIT_CARD_SCRAPER/
 ├── Backend/
-│   └── flask_app.py                # Flask server to serve frontend
+│   └── app.py                # Flask server to serve frontend
 ├── Frontend/
 │   ├── static/
 │   │   ├── script.js
@@ -26,7 +26,7 @@ CREDIT_CARD_SCRAPER/
 │   ├── data_pre_process.py
 │   └── scrape_format.py          # scraping instruction for agent
 ├── .env                           # Store your Gemini API key here
-├── app.py                         # Main entry point
+├── run.py                         # Main entry point
 └── requirements.txt
 ```
 
