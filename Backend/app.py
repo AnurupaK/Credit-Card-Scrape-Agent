@@ -79,7 +79,7 @@ def start_scraping():
         card_details_list = card_pre_process(SCRAPER_STATE['all_card_info'])
         SCRAPER_STATE['cards_formatted_output'] = card_details_list
 
-        return jsonify({'card_data': card_details_list, 'card_urls': SCRAPER_STATE['all_card_links']})
+        return jsonify({'card_data': card_details_list, 'card_urls': SCRAPER_STATE['all_card_links'],'total_links':len(SCRAPER_STATE['all_links'])})
     except Exception as e:
         print(e)
 

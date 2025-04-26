@@ -52,6 +52,7 @@ class ExtractLinks:
             # Return the extracted unique links as a list
             return list(unique_links)
             
+            
         
         except Exception as e:
             print(f'Error extracting links: {e}')

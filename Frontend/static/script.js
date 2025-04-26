@@ -111,7 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     
         stopFetchingAnimation('waiting-area', '✅ Fetched');
     
-        const { card_data, card_urls } = result;
+        const { card_data, card_urls, total_links } = result;
+        waiting.textContent = '🔗 Links: ' + total_links
         card_info_screen.innerHTML = '';
     
         card_data.forEach((element, index) => {
@@ -154,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             alert("✅ Scraping done successfully!");
-            return { card_data: data.card_data, card_urls: data.card_urls };
+            return { card_data: data.card_data, card_urls: data.card_urls , total_links: data.total_links};
         } catch (error) {
             console.error("❌ Error during scraping:", error);
             alert("❌ Failed to start scraping.");
