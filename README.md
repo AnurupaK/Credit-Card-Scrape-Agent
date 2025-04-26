@@ -51,7 +51,7 @@ CREDIT_CARD_SCRAPER/
 - Create or log into your account
 - Generate an **API key**
 - Copy the key and add it to your `.env` file in the root directory:
-  
+
 ```env
 GEMINI_API_KEY=your_key_here
 ```
@@ -118,6 +118,58 @@ Currently supports scraping from:
 3. The agent returns a **JSON structure** representing credit card data.
 4. The data is cleaned using **regex-based preprocessing**.
 5. The frontend allows users to trigger and visualize scraping results.
+
+---
+
+## 🛠️ How to Use the App
+
+The web app provides an interactive interface to control and monitor the scraping process.
+
+### 🔘 UI Components
+
+- **URL Box**: Paste the listing page URL (e.g., SBI credit cards)
+- **Batch Size Box**: Set number of links to process at once
+- **Buttons**:
+  - `Start`: Begins scraping
+  - `Next`: Processes the next batch
+  - `Download CSV`: Exports current scraped data
+- **Output Screen**: Displays parsed credit card info
+- **Status Area**: Shows progress (e.g., `Fetching...`)
+
+---
+
+### 🧩 Flow of Operation
+
+```
+🔹 STEP 1: Input Details
+   └─ 📥 Enter the **URL** of the credit card listing page
+   └─ 🔢 Specify the **Batch Size** (number of links to process at a time)
+
+            ⬇️
+
+🔹 STEP 2: Start Scraping
+   └─ ▶️ Click the **"Start"** button
+   └─ ⏳ Status shows **"Fetching..."**
+   └─ 🖥️ Scraped credit card data appears in the **Output Screen**
+
+            ⬇️
+
+🔹 STEP 3: (Optional) Scrape More
+   └─ 🔁 Click the **"Next"** button to process the next batch of links
+   └─ ⏳ Status shows **"Fetching..."**
+   └─ ➕ New batch of scraped data is added to the output
+
+            ⬇️
+
+🔹 STEP 4: Download Data
+   └─ 💾 Click **"Download CSV"** to export current data
+   └─ 📌 Can be done:
+         - After **Start**
+         - After any **Next**
+         - Or after scraping **all batches**
+
+✅ **Flexible Downloading**: You can export data anytime—no need to wait until the end.
+```
 
 ---
 
