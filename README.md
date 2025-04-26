@@ -92,7 +92,7 @@ Make sure you have **Google Chrome** and the appropriate **ChromeDriver** instal
 ### 5. 🔧 Run the Application
 
 ```bash
-python app.py
+python run.py
 ```
 
 Then open your browser and navigate to:
